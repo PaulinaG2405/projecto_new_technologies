@@ -58,3 +58,11 @@ def login():
 login()
     
 
+
+def menu():
+    print("\n--- Menú ---")
+    print("1. Registrarse")
+    print("2. Ingresar")
+    print("3. Salir")
+    opcion = input("Selecciona una opción (1, 2, 3): ")
+    return opcion
