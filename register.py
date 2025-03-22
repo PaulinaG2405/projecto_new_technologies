@@ -23,7 +23,38 @@ def createUser():
 
 createUser()
 createUser()
-createUser()
 
 print(users)
+
+
+
+
+
+
+
+##Diccionario para los usuarios
+usersData = {
+    "usuario1": "1234" 
+}
+
+def login():
+    print("Registrese para ingresar")
+
+    #Pedir el nombre de usuario
+    User = input("Ingrese su usuario: ")
+    
+    #Verificar si existe ese usuario
+    if User in usersData:
+        #Pedir la contraseña
+        password = input("Ingrese su contraseña: ")
+        #Verificar si es correcta
+        if usersData[User] == password:
+            print(f"Bienvenido {User}, has iniciado sesión correctamente.")
+        else:
+            print("Contraseña incorrecta. Intenta nuevamente.")
+    else:
+        print("El nombre de usuario no existe. Intenta nuevamente.")
+
+login()
+    
 
